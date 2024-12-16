@@ -9,7 +9,7 @@ function sendmail(e) {
     emailjs.send("service_5tp915j", "template_amccxcs", formData)
         .then((response) => {
             alert("Votre message a été envoyé avec succès !");
-            document.getElementById('contactForm').reset(); // Clear the form
+            document.getElementById('contactForm').reset();
         })
         .catch((error) => {
             alert("Une erreur s'est produite lors de l'envoi. Veuillez réessayer.");
